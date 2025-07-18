@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "@/lib/firebase/client";
 import { Rubik } from 'next/font/google'
  
 const rubik = Rubik({
