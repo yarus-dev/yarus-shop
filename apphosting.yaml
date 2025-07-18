@@ -46,12 +46,12 @@ env:
   - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
     secret: firebaseMeasurementId
     
-# https://firebase.google.com/docs/app-hosting/configure#override-scripts
-scripts:
-  buildCommand: npm run build
-  runCommand: npm run start
+# # https://firebase.google.com/docs/app-hosting/configure#override-scripts
+# scripts:
+#   buildCommand: npm run build
+#   runCommand: npm run start
 
-# https://firebase.google.com/docs/app-hosting/configure#configure-build-output
-outputFiles:
-  serverApp:
-    include: [.next/.next/standalone]
+# # https://firebase.google.com/docs/app-hosting/configure#configure-build-output
+# outputFiles:
+#   serverApp:
+#     include: [.next/.next/standalone]

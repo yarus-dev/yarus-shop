@@ -2,12 +2,16 @@
   "name": "yarus-shop",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build --turbo --experimental-app-only",
     "postbuild": "cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
     "start": "node .next/standalone/server.js",
-    "lint": "next lint"
+    "lint": "next lint --fix",
+    "emulate": "firebase emulators:start --only apphosting"
   },
   "dependencies": {
     "firebase": "^12.0.0",
@@ -25,8 +29,5 @@
     "eslint-config-next": "^15.4.1",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
-  },
-  "engines": {
-    "node": ">=20"
   }
 }
