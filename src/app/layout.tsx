@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "@/lib/firebase";
+import "@/lib/firebase/client";
 import { Rubik } from 'next/font/google'
  
 const rubik = Rubik({
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="uk">
+    <html lang="uk-UA">
       <body
         className={`${rubik.variable} antialiased`}
       >
