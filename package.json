@@ -7,9 +7,8 @@
   },
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "next build --turbo --experimental-app-only",
-    "postbuild": "cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
-    "start": "node .next/standalone/server.js",
+    "build": "next build --turbo",
+    "start": "next start -p 8080",
     "lint": "next lint --fix",
     "emulate": "firebase emulators:start --only apphosting"
   },
