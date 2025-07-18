@@ -1,0 +1,15 @@
+{
+  "apphosting": {
+    "backendId": "yarus-shop",
+    "rootDir": "/",
+    "ignore": [
+      "node_modules",
+      ".git",
+      ".next",
+      ".vscode",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "functions"
+    ]
+  }
+}
