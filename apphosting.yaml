@@ -4,9 +4,12 @@ runConfig:
   minInstances: 0
   maxInstances: 2
 
-# env:
-  # - variable: MESSAGE
-  #   value: Hello world!
-
+env:
+  - variable: NEXT_PUBLIC_SHOP_NAME
+    value: Yarus Shop
+  - variable: NEXT_PUBLIC_SHOP_ORIGIN
+    value: https://www.yarus.shop
+  - variable: NEXT_PUBLIC_SHOP_ENV
+    value: production
   # - variable: MY_SECRET
   #   secret: mySecretRef

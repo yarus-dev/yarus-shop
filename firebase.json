@@ -1,0 +1,25 @@
+{
+  "apphosting": {
+    "backendId": "yarus-shop-back-prod",
+    "rootDir": "/",
+    "ignore": [
+      "node_modules",
+      ".git",
+      ".vscode",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "functions"
+    ]
+  },
+  "emulators": {
+    "apphosting": {
+      "port": 3000,
+      "rootDirectory": "./",
+      "startCommand": "npm run dev"
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  }
+}

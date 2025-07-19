@@ -1,0 +1,5 @@
+env:
+  - variable: NEXT_PUBLIC_SHOP_ORIGIN
+    value: http://localhost:3000
+  - variable: NEXT_PUBLIC_SHOP_ENV
+    value: development

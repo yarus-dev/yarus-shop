@@ -6,9 +6,18 @@
     "node": ">=20"
   },
   "scripts": {
+    "emulate": "firebase emulators:start --only apphosting",
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false,
+    "child_process": false,
+    "net": false,
+    "tls": false
   },
   "dependencies": {
     "next": "^15.4.2",
