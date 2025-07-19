@@ -1,13 +1,13 @@
-import type { MetadataRoute } from 'next'
-import { getOriginUrl } from '@/lib/utils'
+import { getOriginUrl } from "@/lib/utils";
+import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: '/admin',
+      userAgent: "*",
+      allow: ["/", "/humans.txt", "/sitemap.xml"],
+      disallow: "/admin",
     },
-    sitemap: getOriginUrl('/sitemap.xml'),
-  }
+    sitemap: getOriginUrl("/sitemap.xml"),
+  };
 }

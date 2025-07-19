@@ -2,11 +2,14 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit",
     "source.sortMembers": "explicit"
   },
+  "files.eol": "\n",
   "files.associations": {
     "*.css": "tailwindcss"
   },
@@ -14,8 +17,5 @@
     "strings": "on"
   },
   "tailwindCSS.classFunctions": ["cn", "cn\\.[a-z-]+", "clsx"],
-  "tailwindCSS.classAttributes": [
-    "className",
-    "class"
-  ],
+  "tailwindCSS.classAttributes": ["className", "class"]
 }

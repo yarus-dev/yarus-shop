@@ -1,0 +1,25 @@
+/* TEAM */
+Founder & CEO: Yaroslav Usenko
+Technical Lead: Yaroslav Usenko — Next.js, TailwindCSS, Firebase
+UI/UX Designer: Yaroslav Usenko — Minimalist design
+
+/* SITE */
+Last update: 2025-07-19
+Standards: HTML5, CSS3, ES6+
+
+/* TECHNOLOGY */
+Framework: Next.js  
+CSS: TailwindCSS  
+Hosting & CMS: Firebase  
+CI/CD: Firebase
+Analytics: Google Analytics  
+
+/* THANKS */
+Thanks to the Ukrainian 3D printing community, the early testers, and everyone who supports the development of engineering solutions.
+
+/* CONTACT */
+Email: support@yarus.shop  
+Website: https://www.yarus.shop  
+
+/* COPYRIGHT */
+Copyright © 2025 Yaroslav Usenko. All rights reserved.  
