@@ -1,5 +1,6 @@
 'use client'
 
+import { cn } from '@/lib/cn'
 import Image from 'next/image'
 import { useEffect } from 'react'
 
@@ -14,12 +15,12 @@ export default function Error({ error, reset }: ErrorProps) {
   }, [error])
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
+    <div className={cn`flex flex-col items-center justify-center min-h-screen p-4`}>
       <Image src="/logo-full.svg" alt="Yarus Logo" width={200} height={20} priority />
-      <h2 className="mt-4 text-2xl font-bold">Щось пішло не так</h2>
+      <h2 className={cn`mt-4 text-2xl font-bold`}>Щось пішло не так</h2>
       <button
         onClick={() => reset()}
-        className="mt-4 bg-foreground text-background py-2 px-4 rounded"
+        className={cn`mt-4 bg-foreground text-background py-2 px-4 rounded`}
       >
         Спробувати знову
       </button>

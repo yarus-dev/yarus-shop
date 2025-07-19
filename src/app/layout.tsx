@@ -1,6 +1,7 @@
+import { cn } from "@/lib/cn";
 import type { Metadata } from "next";
+import { Rubik } from 'next/font/google';
 import "./globals.css";
-import { Rubik } from 'next/font/google'
  
 const rubik = Rubik({
   subsets: ['cyrillic', 'latin'],
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="uk-UA">
       <body
-        className={`${rubik.variable} antialiased`}
+        className={cn`${rubik.variable} antialiased`}
       >
         {children}
       </body>
