@@ -2,23 +2,12 @@
   "name": "yarus-shop",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=20"
-  },
   "scripts": {
     "emulate": "firebase emulators:start --project yarus-shop-firebase",
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix"
-  },
-  "browser": {
-    "fs": false,
-    "os": false,
-    "path": false,
-    "child_process": false,
-    "net": false,
-    "tls": false
   },
   "dependencies": {
     "clsx": "^2.1.1",
