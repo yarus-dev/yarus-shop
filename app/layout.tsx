@@ -1,6 +1,5 @@
 import "@/app/globals.css"
 import { cn } from "@/lib/cn"
-import "@/lib/firebase/analytics"
 import { getOriginUrl } from "@/lib/utils"
 import type { Metadata } from "next"
 import { Rubik } from "next/font/google"
