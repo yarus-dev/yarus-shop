@@ -1,12 +1,12 @@
-import { cn } from "@/lib/cn";
-import Link from "next/link";
+import { cn } from "@/lib/cn"
+import Link from "next/link"
 
 export function Logo({
   withText = true,
   className,
 }: {
-  withText?: boolean;
-  className?: string;
+  withText?: boolean
+  className?: string
 }) {
   return (
     <Link href="/" className="inline-block" aria-label="Yarus Shop">
@@ -31,7 +31,7 @@ export function Logo({
         )}
       </svg>
     </Link>
-  );
+  )
 }
 
-export default Logo;
+export default Logo

@@ -13,7 +13,9 @@
         "firebase",
         "emulators:start",
         "--project",
-        "yarus-shop-firebase"
+        "yarus-shop-firebase",
+        "--only",
+        "apphosting"
       ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"

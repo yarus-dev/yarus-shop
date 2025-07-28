@@ -1,5 +1,5 @@
-import { getOriginUrl } from "@/lib/utils";
-import type { MetadataRoute } from "next";
+import { getOriginUrl } from "@/lib/utils"
+import type { MetadataRoute } from "next"
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -9,5 +9,5 @@ export default function robots(): MetadataRoute.Robots {
       disallow: ["/", "/admin"],
     },
     sitemap: getOriginUrl("/sitemap.xml"),
-  };
+  }
 }

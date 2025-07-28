@@ -1,5 +1,5 @@
-import { getOriginUrl } from "@/lib/utils";
-import type { MetadataRoute } from "next";
+import { getOriginUrl } from "@/lib/utils"
+import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -9,5 +9,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
-  ];
+  ]
 }

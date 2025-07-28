@@ -1,8 +1,8 @@
-import { cn } from "@/lib/cn";
-import NextLink, { LinkProps } from "next/link";
-import { forwardRef } from "react";
+import { cn } from "@/lib/cn"
+import NextLink, { LinkProps } from "next/link"
+import { forwardRef } from "react"
 
-type Props = LinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>;
+type Props = LinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
 export const Link = forwardRef<HTMLAnchorElement, Props>(
   ({ children, className, ...props }, ref) => (
@@ -13,9 +13,9 @@ export const Link = forwardRef<HTMLAnchorElement, Props>(
     >
       {children}
     </NextLink>
-  )
-);
+  ),
+)
 
-Link.displayName = "Link";
+Link.displayName = "Link"
 
-export default Link;
+export default Link

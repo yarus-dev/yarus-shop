@@ -1,7 +1,7 @@
-import { Link } from "@/components/link";
-import { Logo } from "@/components/logo";
-import { cn } from "@/lib/cn";
-import type { Metadata } from "next";
+import { Link } from "@/components/link"
+import { Logo } from "@/components/logo"
+import { cn } from "@/lib/cn"
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Сторінка не знайдена",
@@ -13,17 +13,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/not-found",
   },
-};
+}
 
 export default function NotFound() {
   return (
     <div
-      className={cn`flex flex-col items-center justify-center min-h-screen p-4`}
+      className={cn`flex min-h-screen flex-col items-center justify-center p-4`}
     >
       <Logo withText className="h-12" />
       <div className="max-w-xl">
-        <h2 className={cn`mt-4 text-4xl text-center font-bold`}>
-          <strong className={cn`text-4xl block`}>404</strong>
+        <h2 className={cn`mt-4 text-center text-4xl font-bold`}>
+          <strong className={cn`block text-4xl`}>404</strong>
           <span>Сторінка не знайдена</span>
         </h2>
         <p className={cn`mt-4 text-lg`}>
@@ -46,5 +46,5 @@ export default function NotFound() {
         </p>
       </div>
     </div>
-  );
+  )
 }
