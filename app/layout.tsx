@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   applicationName: "Yarus Shop",
   creator: "Yaroslav Usenko",
   authors: [{ url: getOriginUrl("/humans.txt") }],
+  robots: {
+    index: false,
+    follow: false,
+  },
 }
 
 export default function RootLayout({
