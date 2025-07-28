@@ -1,5 +1,4 @@
 import { Link } from "@/components/link"
-import { Logo } from "@/components/logo"
 import { cn } from "@/lib/cn"
 import type { Metadata } from "next"
 
@@ -20,7 +19,6 @@ export default function NotFound() {
     <div
       className={cn`flex min-h-screen flex-col items-center justify-center p-4`}
     >
-      <Logo withText className="h-12" />
       <div className="max-w-xl">
         <h2 className={cn`mt-4 text-center text-4xl font-bold`}>
           <strong className={cn`block text-4xl`}>404</strong>
