@@ -1,7 +1,7 @@
 "use client";
 
+import { Logo } from "@/components/logo";
 import { cn } from "@/lib/cn";
-import Image from "next/image";
 import { useEffect } from "react";
 
 type ErrorProps = {
@@ -18,13 +18,7 @@ export default function Error({ error, reset }: ErrorProps) {
     <div
       className={cn`flex flex-col items-center justify-center min-h-screen p-4`}
     >
-      <Image
-        src="/logo-full.svg"
-        alt="Yarus Logo"
-        width={200}
-        height={20}
-        priority
-      />
+      <Logo withText className="h-12" />
       <h2 className={cn`mt-4 text-2xl font-bold`}>Щось пішло не так</h2>
       <button
         onClick={() => reset()}
