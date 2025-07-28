@@ -1,9 +1,6 @@
 {
-  "name": "yarus-shop",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "emulate": "firebase emulators:start --project yarus-shop-firebase",
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
