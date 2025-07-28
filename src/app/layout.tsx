@@ -3,6 +3,7 @@ import { getOriginUrl } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
+
 const rubik = Rubik({
   subsets: ["cyrillic", "latin"],
   variable: "--font-rubik",
