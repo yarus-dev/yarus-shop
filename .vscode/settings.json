@@ -4,18 +4,28 @@
   },
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "tailwindCSS.classFunctions": ["cn", "cn\\.[a-z-]+", "clsx"],
-  "tailwindCSS.classAttributes": ["className", "class"],
+  "tailwindCSS.classFunctions": [
+    "cn",
+    "cn\\.[a-z-]+",
+    "clsx"
+  ],
+  "tailwindCSS.classAttributes": [
+    "className",
+    "class"
+  ],
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit",
     "source.sortImports": "explicit",
-    "source.fixAll": "explicit"
+    "source.fixAll.eslint": "always"
   },
   "eslint.format.enable": true,
   "eslint.options": {
     "overrideConfigFile": "./eslint.config.mjs"
   },
-  "prettier.enable": false
+  "prettier.enable": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
