@@ -1,6 +1,6 @@
 {
   "apphosting": {
-    "backendId": "yarus-shop-back-prod",
+    "backendId": "yarus-shop-web",
     "rootDir": "/",
     "ignore": [
       "node_modules",
