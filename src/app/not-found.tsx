@@ -1,6 +1,6 @@
+import Logo from "@/components/Logo";
 import { cn } from "@/lib/cn";
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Сторінка не знайдена",
@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
+  alternates: {
+    canonical: "/not-found",
+  },
 };
 
 export default function NotFound() {
@@ -16,13 +19,7 @@ export default function NotFound() {
     <div
       className={cn`flex flex-col items-center justify-center min-h-screen p-4`}
     >
-      <Image
-        src="/logo-full.svg"
-        alt="Yarus Logo"
-        width={200}
-        height={20}
-        priority
-      />
+      <Logo />
       <h2 className={cn`mt-4 text-2xl font-bold`}>Сторінку не знайдено</h2>
       <p className={cn`mt-2 text-center text-sm`}>
         Вибачте, такої сторінки не існує.
