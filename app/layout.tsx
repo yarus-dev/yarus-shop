@@ -1,4 +1,5 @@
 import "@/app/globals.css"
+import "@/lib/analytics"
 import { cn } from "@/lib/cn"
 import { getOriginUrl } from "@/lib/utils"
 import type { Metadata } from "next"
