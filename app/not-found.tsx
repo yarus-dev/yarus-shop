@@ -1,39 +1,40 @@
 import { Link } from "@/components/link"
+import { Heading, Paragraph } from "@/components/typography"
 import { cn } from "@/lib/cn"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Сторінка не знайдена",
+  title: "404 - Сторінка не знайдена",
   description: "Вибачте, такої сторінки не існує.",
   robots: {
     index: false,
     follow: false,
   },
   alternates: {
-    canonical: "/not-found",
+    canonical: "/404",
   },
 }
 
 export default function NotFound() {
   return (
-    <div
-      className={cn`flex min-h-screen flex-col items-center justify-center p-4`}
-    >
-      <div className="max-w-xl">
-        <h2 className={cn`mt-4 text-center text-4xl font-bold`}>
-          <strong className={cn`block text-4xl`}>404</strong>
-          <span>Сторінка не знайдена</span>
-        </h2>
-        <p className={cn`mt-4 text-lg`}>
+    <div className={cn`flex flex-1 flex-col items-center justify-center p-4`}>
+      <div className={cn`max-w-prose`}>
+        <Heading level={1} className={cn`text-center`}>
+          404
+        </Heading>
+        <Paragraph lead className={cn`text-center`}>
+          Сторінка не знайдена
+        </Paragraph>
+        <Paragraph>
           Ймовірно, ця сторінка ніколи не існувала або стала непотрібною,
           і&nbsp;ми її&nbsp;видалили.
-        </p>
-        <p className={cn`mt-2 text-lg`}>
+        </Paragraph>
+        <Paragraph>
           Таке трапляється, не&nbsp;засмучуйтеся.{" "}
           <Link href="/">На&nbsp;головній</Link> ще є&nbsp;сторінки,
           не&nbsp;гірші за&nbsp;цю.
-        </p>
-        <p className={cn`mt-2 text-lg`}>
+        </Paragraph>
+        <Paragraph>
           Скаржитися сюди&nbsp;&rarr;{" "}
           <a
             className={cn`text-blue-600 hover:underline`}
@@ -41,7 +42,7 @@ export default function NotFound() {
           >
             support@yarus.shop
           </a>
-        </p>
+        </Paragraph>
       </div>
     </div>
   )

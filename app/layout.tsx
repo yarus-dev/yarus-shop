@@ -1,20 +1,37 @@
 import "@/app/globals.css"
+import { Footer } from "@/components/footer"
+import { Header } from "@/components/header"
+
 import { cn } from "@/lib/cn"
 import { getOriginUrl } from "@/lib/utils"
 import type { Metadata } from "next"
-import { Rubik } from "next/font/google"
+import { IBM_Plex_Sans } from "next/font/google"
 
-const rubik = Rubik({
+const IBMPlexSans = IBM_Plex_Sans({
   subsets: ["cyrillic", "latin"],
-  variable: "--font-rubik",
+  variable: "--font-ibm-plex-sans",
 })
 
 export const metadata: Metadata = {
-  title: "Yarus Shop",
+  title: "Ярус — інтернет-магазин для інженерів",
+  description:
+    "Ярус — інтернет-магазин для інженерів і розробників. 3D-принтери, пластик, комплектуючі для дронів, плати та інші інженерні рішення в одному місці.",
+  keywords: [
+    "інтернет-магазин",
+    "інженери",
+    "3D-принтери",
+    "пластик",
+    "дрони",
+    "плати",
+  ],
   metadataBase: new URL(getOriginUrl()),
   applicationName: "Yarus Shop",
   creator: "Yaroslav Usenko",
-  authors: [{ url: getOriginUrl("/humans.txt") }],
+  publisher: "Yaroslav Usenko",
+  authors: [
+    { name: "Yaroslav Usenko", url: "https://www.usenko.pp.ua" },
+    { url: getOriginUrl("/humans.txt") },
+  ],
   robots: {
     index: false,
     follow: false,
@@ -28,7 +45,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk-UA">
-      <body className={cn`${rubik.variable} antialiased`}>{children}</body>
+      <body
+        className={cn`${IBMPlexSans.variable} flex size-full min-h-screen flex-col antialiased`}
+      >
+        <Header />
+        {children}
+        <Footer className={cn`mt-auto`} />
+      </body>
     </html>
   )
 }

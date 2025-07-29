@@ -9,7 +9,7 @@ export function Logo({
   className?: string
 }) {
   return (
-    <Link href="/" className="inline-block" aria-label="Yarus Shop">
+    <Link href="/" className={cn`inline-block p-3`} aria-label="Yarus Shop">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox={`0 0 ${withText ? 100 : 24} 24`}
