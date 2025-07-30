@@ -6,8 +6,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: ["/robots.txt", "/humans.txt", "/sitemap.xml"],
-      disallow: ["/", "/admin"],
+      disallow: ["/"],
     },
     sitemap: getOriginUrl("/sitemap.xml"),
+    host: getOriginUrl(),
   }
 }
